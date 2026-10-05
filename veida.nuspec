@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>veida</id>
+    <version>0.2.0</version>
+    <title>Veida CLI (AI image generator)</title>
+    <authors>Veida</authors>
+    <owners>kavel</owners>
+    <projectUrl>https://veida.ai</projectUrl>
+    <packageSourceUrl>https://github.com/hanshs474/veida-choco</packageSourceUrl>
+    <projectSourceUrl>https://github.com/hanshs474/veida-go</projectSourceUrl>
+    <docsUrl>https://pkg.go.dev/github.com/hanshs474/veida-go</docsUrl>
+    <bugTrackerUrl>https://github.com/hanshs474/veida-go/issues</bugTrackerUrl>
+    <licenseUrl>https://github.com/hanshs474/veida-go/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://veida.ai/logo.png</iconUrl>
+    <tags>veida ai image-generator text-to-image cli no-api-key</tags>
+    <summary>Generate images from the command line with no API key and no account.</summary>
+    <description><![CDATA[Generate images from the Windows command line, with no API key and no account.
+
+```
+veida "an isometric coffee shop, pastel palette"
+veida -ratio 16:9 "flat illustration of a rocket leaving a laptop screen"
+```
+
+Each command prints a permanent image URL.
+
+It runs on the free tier of [Veida](https://veida.ai/?utm_source=chocolatey&utm_medium=package): 1K output, watermarked, about seven images a day per machine. The exit code is 3 when that allowance is spent and 4 when the content filter refuses the prompt. Signing in on [veida.ai](https://veida.ai/pricing?utm_source=chocolatey&utm_medium=package) removes the watermark and opens models such as [GPT Image 2](https://veida.ai/image/gpt-image-2?utm_source=chocolatey&utm_medium=package).
+
+Libraries for Go, Python, JavaScript, Rust, Ruby, Dart and Java: [github.com/hanshs474/veida-go](https://github.com/hanshs474/veida-go).]]></description>
+    <releaseNotes>https://github.com/hanshs474/veida-go/releases/tag/v0.2.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
